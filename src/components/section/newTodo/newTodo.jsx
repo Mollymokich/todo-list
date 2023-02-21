@@ -13,7 +13,7 @@ const NewTodo = (props) => {
 
   return (
     <div className="todoItem">
-      <button onClick={handleShowModal}>
+      <button className="threePoints" onClick={handleShowModal}>
         <img src={threePoints} />
       </button>
       {isModalShown && (heading === "To Do" || heading === "Done") ? (

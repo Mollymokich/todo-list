@@ -52,9 +52,30 @@ const Section = () => {
     <div>
       <div className="section-buttons">
         <div className="buttons">
-          <button onClick={filterTodo}>To Do</button>
-          <button onClick={filterDone}>Done</button>
-          <button onClick={filterTrash}>Trash</button>
+          <button
+            className={`tab-button ${
+              heading === "To Do" ? "tab-button-active" : ""
+            }`}
+            onClick={filterTodo}
+          >
+            To Do
+          </button>
+          <button
+            className={`tab-button ${
+              heading === "Done" ? "tab-button-active" : ""
+            }`}
+            onClick={filterDone}
+          >
+            Done
+          </button>
+          <button
+            className={`tab-button ${
+              heading === "Trash" ? "tab-button-active" : ""
+            }`}
+            onClick={filterTrash}
+          >
+            Trash
+          </button>
         </div>
         <div>
           <button onClick={handleModal}>+</button>

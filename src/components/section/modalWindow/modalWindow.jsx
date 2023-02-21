@@ -20,7 +20,7 @@ const ModalWindow = (props) => {
   };
 
   return (
-    <div>
+    <div className="modalWindow">
       <h3>Add New To Do</h3>
       <textarea value={value} onChange={handleChange}></textarea>
       <button onClick={addTodo}>Add</button>

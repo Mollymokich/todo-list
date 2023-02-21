@@ -1,7 +1,13 @@
 .todoItem {
   display: flex;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+
+.todoItem input[type="checkbox"]:checked ~ p {
+  text-decoration: line-through;
+  color: aquamarine;
 }
 
 .section-buttons {
@@ -12,11 +18,31 @@
 .buttons {
   padding: 1rem;
   margin-bottom: 1rem;
-  vertical-align: middle;
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
+.tab-button {
+  background: red;
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.tab-button:hover {
+  background: green;
+}
+.tab-button:focus {
+  background: green;
+}
+.buttons button:active {
+  background: green;
+}
+.tab-button-active {
+  background: gray;
+}
 .Footerstyle {
   display: flex;
   justify-content: space-between;
@@ -30,9 +56,6 @@
 }
 
 .threePoints {
-  width: 2.5px;
-  height: 10px;
-  top: 7px;
-  left: 11px;
   background: transparent;
+  border: none;
 }
