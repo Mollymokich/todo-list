@@ -1,0 +1,38 @@
+.todoItem {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footerstyle {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.First {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.threePoints {
+  width: 2.5px;
+  height: 10px;
+  top: 7px;
+  left: 11px;
+  background: transparent;
+}
