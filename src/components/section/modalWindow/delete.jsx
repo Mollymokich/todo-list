@@ -11,6 +11,7 @@ const Delete = (props) => {
       setTodos(newOriginalTodos);
     }
   };
+
   const handleMoveBack = () => {
     const newOriginalTodos = [...originalTodos];
     const idx = newOriginalTodos.findIndex((el) => el.id === todo.id);
@@ -21,13 +22,13 @@ const Delete = (props) => {
   };
 
   return (
-    <div>
-      <div onClick={handleDelete}>
-        <img src={trashImage} />
+    <div className="secondModalWindow">
+      <div className="Delete" onClick={handleDelete}>
+        <img src={trashImage} alt="trash icon" />
         <h5>Delete Forever</h5>
       </div>
-      <div onClick={handleMoveBack}>
-        <img src={trashImage} />
+      <div className="Move" onClick={handleMoveBack}>
+        <img src={trashImage} alt="trash icon" />
         <h5>Move Back To To Do</h5>
       </div>
     </div>

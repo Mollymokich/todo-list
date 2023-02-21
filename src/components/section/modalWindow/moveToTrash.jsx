@@ -11,8 +11,8 @@ const MoveToTrash = (props) => {
   };
 
   return (
-    <div onClick={handleToTrash}>
-      <img src={trashImage} />
+    <div className="moveToTrash" onClick={handleToTrash}>
+      <img className="musor" src={trashImage} />
       <h5>Move To Trash</h5>
     </div>
   );

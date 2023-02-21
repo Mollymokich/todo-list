@@ -7,12 +7,13 @@
 
 .todoItem input[type="checkbox"]:checked ~ p {
   text-decoration: line-through;
-  color: aquamarine;
+  color: darkgray;
 }
 
 .section-buttons {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .buttons {
@@ -25,23 +26,23 @@
 }
 
 .tab-button {
-  background: red;
+  background: #f0f0f0;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 4px;
 }
 
 .tab-button:hover {
-  background: green;
+  background: lightgrey;
 }
 .tab-button:focus {
-  background: green;
+  background: lightgrey;
 }
 .buttons button:active {
-  background: green;
+  background: lightgrey;
 }
 .tab-button-active {
-  background: gray;
+  background: lightslategray;
 }
 .Footerstyle {
   display: flex;
@@ -51,11 +52,82 @@
 }
 
 .First {
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 1rem;
 }
 
 .threePoints {
   background: transparent;
   border: none;
+}
+
+.moveToTrash {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background: gray;
+  border: none;
+  height: 20px;
+  border-radius: 20px;
+  padding: 4px;
+  margin-bottom: -3rem;
+}
+.modalWindow {
+  position: fixed;
+  right: 0;
+  width: 40vh;
+  height: 40vh;
+  top: 40;
+  z-index: 1;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: #999999;
+}
+
+.textArea {
+  border: 1px solid #999999;
+  height: 30vh;
+  width: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgrey;
+  border-radius: 10px;
+}
+
+.secondModalWindow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background: gray;
+  border: none;
+  height: 10vh;
+  border-radius: 20px;
+  padding: 4px;
+  margin-bottom: -6rem;
+}
+.Delete,
+.Move {
+  display: flex;
+  height: 4vh;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  margin-top: -50px;
+}
+
+.Delete,
+.Move {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  height: 10hv;
+  margin-top: auto;
+}
+
+.Delete h5,
+.Move h5 {
+  margin-left: 0.5rem;
 }
